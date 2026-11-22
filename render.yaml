@@ -1,0 +1,38 @@
+# Render Blueprint — deploys the Django API on Render's free tier.
+# Render dashboard → New → Blueprint → pick this repo → Apply.
+#
+# Default: SQLite on the instance disk (nothing extra to create, never expires).
+# Free instances sleep after ~15 min idle and their disk is reset on restart/deploy,
+# so the demo data is re-seeded automatically on start (seed_demo --if-empty).
+# For persistent data, uncomment the `databases:` block and the DATABASE_URL env var.
+services:
+  - type: web
+    name: pani-shakkhi-api
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput
+    startCommand: python manage.py migrate --noinput && python manage.py seed_demo --if-empty && gunicorn config.wsgi:application --bind 0.0.0.0:$PORT --workers 2 --timeout 60
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: DEBUG
+        value: "0"
+      - key: SECURE_SSL_REDIRECT
+        value: "0" # Render already forces HTTPS at the edge
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://itadakimashu.github.io,http://localhost:5173
+      # - key: DATABASE_URL
+      #   fromDatabase:
+      #     name: pani-shakkhi-db
+      #     property: connectionString
+
+# databases:
+#   - name: pani-shakkhi-db
+#     plan: free
+#     databaseName: pani_shakkhi
+#     user: pani

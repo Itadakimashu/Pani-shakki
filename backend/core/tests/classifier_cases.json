@@ -1,0 +1,244 @@
+[
+ {
+  "text": "আমাদের এলাকায় পানি স্বাভাবিক আছে",
+  "severity": 0
+ },
+ {
+  "text": "নদীর পানি কমছে, সবাই ভালো আছি",
+  "severity": 0
+ },
+ {
+  "text": "আজ সারাদিন বৃষ্টি হচ্ছে",
+  "severity": 0
+ },
+ {
+  "text": "পানি নেমে গেছে, রাস্তা শুকিয়ে যাচ্ছে",
+  "severity": 0
+ },
+ {
+  "text": "পানি বাড়ছে না, চিন্তার কিছু নেই",
+  "severity": 0
+ },
+ {
+  "text": "যমুনার পানি বাড়ছে",
+  "severity": 1
+ },
+ {
+  "text": "নদীতে পানি বারছে, রাতে আরও বাড়তে পারে",
+  "severity": 1
+ },
+ {
+  "text": "গত রাত থেকে পানি ২ ফুট বেড়েছে",
+  "severity": 1,
+  "water_level": "feet",
+  "feet": 2
+ },
+ {
+  "text": "নদীর পানি বিপদসীমা ছুঁই ছুঁই",
+  "severity": 1
+ },
+ {
+  "text": "হাওরে পানি বাড়তেছে, বৃষ্টি থামছে না",
+  "severity": 1
+ },
+ {
+  "text": "চরে ভাঙন শুরু হয়েছে, পানি বাড়তাছে",
+  "severity": 1
+ },
+ {
+  "text": "উঠোনে পানি চলে এসেছে",
+  "severity": 2
+ },
+ {
+  "text": "উঠানে হাটু পানি",
+  "severity": 2,
+  "water_level": "knee"
+ },
+ {
+  "text": "ঘরে পানি ঢুকেছে, চৌকির উপর আছি",
+  "severity": 2
+ },
+ {
+  "text": "ঘরের ভিতর কোমর পানি, গরু নিয়ে চিন্তায় আছি",
+  "severity": 2,
+  "water_level": "waist",
+  "needs": [
+   "livestock"
+  ]
+ },
+ {
+  "text": "রাস্তা ডুবে গেছে, বাজারে যাওয়া যাচ্ছে না",
+  "severity": 2
+ },
+ {
+  "text": "ধানক্ষেত সব তলিয়ে গেছে",
+  "severity": 2
+ },
+ {
+  "text": "উঠোনে এক ফুট পানি, টিউবওয়েল ডুবে গেছে",
+  "severity": 2,
+  "water_level": "feet",
+  "feet": 1,
+  "needs": [
+   "drinking_water"
+  ]
+ },
+ {
+  "text": "বাড়িতে ১.৫ ফুট পানি, খাবার পানি নেই",
+  "severity": 2,
+  "water_level": "feet",
+  "feet": 1.5,
+  "needs": [
+   "drinking_water"
+  ]
+ },
+ {
+  "text": "ঘরে পানী উঠে গেছে, শুকনা খাবার দরকার",
+  "severity": 2,
+  "needs": [
+   "food"
+  ]
+ },
+ {
+  "text": "বন্যায় ঘরে দেড় হাত পানি",
+  "severity": 2,
+  "water_level": "feet",
+  "feet": 2.3
+ },
+ {
+  "text": "আমরা আশ্রয়কেন্দ্রে যাচ্ছি, ছাগলগুলো রেখে যেতে হচ্ছে",
+  "severity": 2,
+  "needs": [
+   "livestock",
+   "shelter"
+  ]
+ },
+ {
+  "text": "জোয়ারের পানি ঘরে ঢুকছে",
+  "severity": 2
+ },
+ {
+  "text": "আমরা আটকা পড়েছি, নৌকা পাঠান",
+  "severity": 3,
+  "needs": [
+   "boat",
+   "rescue"
+  ]
+ },
+ {
+  "text": "সাহায্য দরকার, ঘর ডুবে যাচ্ছে",
+  "severity": 3
+ },
+ {
+  "text": "পানি বুক সমান, বাচ্চাদের নিয়ে ছাদে উঠেছি",
+  "severity": 3,
+  "water_level": "chest"
+ },
+ {
+  "text": "বাঁচাও! আমরা ডুবে যাচ্ছি",
+  "severity": 3
+ },
+ {
+  "text": "গলা পানি, বৃদ্ধ মা অসুস্থ, ওষুধ লাগবে",
+  "severity": 3,
+  "water_level": "neck",
+  "needs": [
+   "medicine"
+  ]
+ },
+ {
+  "text": "বাঁধ ভেঙে গ্রাম তলিয়ে গেছে, উদ্ধার করুন",
+  "severity": 3,
+  "needs": [
+   "rescue"
+  ]
+ },
+ {
+  "text": "একজন নিখোঁজ, স্রোতে ভেসে গেছে",
+  "severity": 3
+ },
+ {
+  "text": "৫ ফুট পানি ঘরে, টিনের চালে আছি",
+  "severity": 3,
+  "water_level": "feet",
+  "feet": 5,
+  "needs_exclude": [
+   "food"
+  ]
+ },
+ {
+  "text": "আটকে আছি তিন দিন, খাবার নেই, জরুরি সাহায্য চাই",
+  "severity": 3,
+  "needs": [
+   "food",
+   "rescue"
+  ]
+ },
+ {
+  "text": "সাহাজ্য দরকার, গরু ছাগল ভেসে যাচ্ছে",
+  "severity": 3,
+  "needs": [
+   "livestock"
+  ]
+ },
+ {
+  "text": "পানি বাড়ছে, কোমর পানি উঠোনে, নৌকা আর ওষুধ দরকার",
+  "severity": 2,
+  "water_level": "waist",
+  "needs": [
+   "boat",
+   "medicine"
+  ]
+ },
+ {
+  "text": "সাড়ে তিন ফুট পানি বাড়িতে",
+  "severity": 2,
+  "water_level": "feet",
+  "feet": 3.5
+ },
+ {
+  "text": "water in the house, need boat",
+  "severity": 2,
+  "needs": [
+   "boat"
+  ]
+ },
+ {
+  "text": "we are trapped on the roof, help us",
+  "severity": 3,
+  "needs": [
+   "rescue"
+  ]
+ },
+ {
+  "text": "উঠোনে পানি নেই, সব ঠিক আছে",
+  "severity": 0
+ },
+ {
+  "text": "উঠোনে গোড়ালি পানি",
+  "severity": 2,
+  "water_level": "ankle"
+ },
+ {
+  "text": "পানি ২ মিটার বেড়েছে নদীতে",
+  "severity": 1,
+  "water_level": "feet",
+  "feet": 6.6
+ },
+ {
+  "text": "উঠোনে এক ফুট পানি, খাবার পানি নেই",
+  "severity": 2,
+  "water_level": "feet",
+  "feet": 1,
+  "needs": [
+   "drinking_water"
+  ]
+ },
+ {
+  "text": "ঘরে খাবার নেই, চাল দরকার",
+  "severity": 0,
+  "needs": [
+   "food"
+  ]
+ }
+]
