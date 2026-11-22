@@ -43,10 +43,10 @@ cd backend && pip install -r requirements-dev.txt && pytest   # same 42 cases + 
 
 ## Deploying the frontend (GitHub Pages)
 
-`deploy.yml` runs on every push to `main`. One-time setup:
+`deploy.yml` runs on every push to `main`: it tests, builds and publishes `frontend/dist` to the **`gh-pages` branch**, which GitHub Pages serves.
 
-1. **Settings › Pages › Build and deployment › Source: GitHub Actions.**
-2. GitHub Pages on a **private** repo needs a paid plan (Pro/Team/Enterprise). On a free account, make the repo public (Settings › General › Danger Zone › Change visibility) or the site won't publish.
+1. The repo must be public (GitHub Pages on a private repo needs a paid plan).
+2. If the site doesn't appear, check **Settings › Pages › Source: Deploy from a branch › `gh-pages` / `(root)`**.
 3. Optional: **Settings › Secrets and variables › Actions › Variables › New variable** `VITE_API_URL` = your backend URL, then re-run the workflow (Actions › Deploy… › Run workflow).
 
 ## Deploying the backend later (Render free tier, all from a phone)
